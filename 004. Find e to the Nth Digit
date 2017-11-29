@@ -1,0 +1,11 @@
+'''
+Just like the previous problem, but with e instead of PI. Enter a number and have the program generate e up to that many decimal places. 
+Keep a limit to how far the program will go
+'''
+
+from math import e
+n = int(raw_input("The number of decimal you want of e: "))
+if 0 < n < 51:
+    print '%.*f' % (n, e)
+else:
+    print raw_input("That's out of range, the number of decimal you want of e: ")
